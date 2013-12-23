@@ -1,4 +1,9 @@
-ConfigParser
-============
+# ConfigParser
 
-A simple config parser in Ruby
+## Usage
+
+```ruby
+require './config_parser'
+config = ConfigParser.new('test.conf')
+config["server_id"] == 55331
+```
