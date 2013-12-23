@@ -12,6 +12,7 @@ class ConfigParser < Hash
           when /^\d+.\d*$/          then Float(value)
           else value
         end
+      elsif /^\s*$/ =~ line
       else
         STDERR.puts("Invalid line in config line #{$.}: #{line}")
       end
